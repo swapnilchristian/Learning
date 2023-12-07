@@ -1,0 +1,1 @@
+This directory contains projects for Introduction to Programming Nanodegree from Udacity.

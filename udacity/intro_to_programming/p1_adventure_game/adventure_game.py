@@ -38,19 +38,20 @@ def display_player_input_msg(input_msg):
         print_pause(phrase)
 
 
-def handle_incorrect_input(user_val, exp_val_1, exp_val_2, ask_user_for_input()):
+def handle_incorrect_input(user_val, exp_val_1, exp_val_2, func_to_call):
     '''
-    This function takes 3 argruments.
+    This function takes 4 argruments.
     user_val --> This is the input from user
     exp_val_1 --> Expected user input 1 for e.g. yes (y)
     exp_val_2 --> Expected user input 2 for e.g. no (n)
+    func_to_call --> Get user input if value does not match exp_val_1 or exp_val_2
     '''
     if user_val in exp_val_1:
         return exp_val_1
     elif user_val in exp_val_2:
         return exp_val_2
     else:
-        return None
+        func_to_call
 
 
 def get_player_input():
